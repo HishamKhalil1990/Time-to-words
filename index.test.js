@@ -16,17 +16,17 @@ describe('Time to words', () => {
     expect(timeInWords).toBe('quarter to three');
   });
 
-  it('Handles midnight', () => {
+  it('Handles 8:27', () => {
     const timeInWords = convertTimeToWords('8:27');
     expect(timeInWords).toBe('tweenty seven past eight');
   });
 
-  it('Handles 30 - 8:30', () => {
+  it('Handles 8:43', () => {
     const timeInWords = convertTimeToWords('8:43');
     expect(timeInWords).toBe('seventeen to nine');
   });
 
-  it('Handles times after 30 mins - 2:45', () => {
+  it('Handles 8:31', () => {
     const timeInWords = convertTimeToWords('8:31');
     expect(timeInWords).toBe('tweenty nine to nine');
   });

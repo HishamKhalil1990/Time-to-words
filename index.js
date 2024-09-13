@@ -57,7 +57,6 @@ function convertTimeToWords(time) {
     }
   }
 
-  return 'half past eight';
 }
 
 module.exports = { convertTimeToWords };
