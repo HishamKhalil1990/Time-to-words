@@ -47,6 +47,8 @@ function convertTimeToWords(time) {
     return 'midnight'
   }else if(hour == 12 && min == 0){
     return 'midday'
+  }else if(min == 0){
+    return `${numbersString[hour]} o'clock`
   }else{
     if(min <= 30){
       return `${numbersString[min]} past ${numbersString[hour]}`
